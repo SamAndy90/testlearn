@@ -1,0 +1,142 @@
+/* body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: url("./1095_square.avif") center / cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: aliceblue;
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.2;
+    cursor: pointer;
+} */
+/* 
+.content p  {
+    text-align: justify;
+    max-width: 500px;
+}
+
+.cursor {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: .1s;
+
+}
+
+.cursor2 {
+    position: fixed;
+    width: 8px;
+    height: 8px;
+    background: #a3a3a3;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: .15s;
+}
+
+.content:hover ~ .cursor {
+    transform: translate(-50%, -50%) scale(1.5) ;
+    box-shadow: 0 0 20px #ffffff;
+    background: #fff;
+    opacity: .5;
+}
+.content:hover ~ .cursor2 {
+    opacity: 0;
+} */
+input {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: #1f1f1f;
+}
+
+.rating-form {
+}
+.form {
+}
+.rating {
+    display: flex;
+    align-items: flex-end;
+    font-size: 40px;
+    line-height: 0.85;
+}
+.rating__body {
+    position: relative;
+}
+.rating__body::before {
+    content: "★★★★★";
+    display: block;
+    color: white;
+}
+.rating__active {
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+.rating__active::before {
+    content: "★★★★★";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    color: rgb(220, 198, 0);
+}
+.rating__items {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.rating__item {
+    flex: 0 0 20%;
+    height: 100%;
+    opacity: 0;
+}
+.rating__value {
+    font-size: 50%;
+    padding-left: 20px;
+    color: aliceblue;
+}
+.form__btn {
+    margin-top: 30px;
+    background: rgb(109, 0, 109);
+    columns: white;
+    border: none;
+    color: aliceblue;
+    padding: 10px 20px;
+}
+
+.wrapper {
+    background: #fff;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.burger {
+    width: 100px;
+    height: 100px;
+    background: greenyellow;
+}
+.wrapper.active .burger {
+    background: red;
+}
